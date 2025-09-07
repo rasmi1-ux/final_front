@@ -10,7 +10,8 @@ import Booking from './components/Routes/Bookings'
 import Login from './components/Routes/Logsign'
 import Footer from './components/component/Footer'
 import About from './components/Routes/About'
-
+import ManageFields from './components/Routes/manage.Fields'
+import ManageBookings from './components/Routes/manageBookings'
 
 function App() {
  const [user, setUser] = useState(null);
@@ -43,9 +44,9 @@ function App() {
    <Router>
     <Navbar user={user} onLogout={handleLogout} />
     <Routes>
-      <Route path='/' element={<Home />}/>
+      <Route path='/' element={user?.role === 'admin' ? <ManageFields user={user} /> : <Home />}/>
       <Route path='/browse' element={<BrowseFields />}/>
-      <Route path='/booking' element={<Booking user={user} />}/>
+      <Route path='/booking' element={user?.role === 'admin' ? <ManageBookings user={user} /> : <Booking user={user} />}/>
       <Route path='/book' element={<Book />}/>
       <Route path='/login' element={<Login onLogin={handleLogin} />}/>  
       <Route path='/about' element={<About />} />
