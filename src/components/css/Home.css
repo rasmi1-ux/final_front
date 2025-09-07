@@ -1,0 +1,365 @@
+/* Featured Fields Section */
+.featured-fields-section {
+  margin-top: 64px;
+  margin-bottom: 60px;
+}
+.featured-fields-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.featured-fields-header h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1a232b;
+  margin-bottom: 16px;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+}
+.featured-fields-desc {
+  font-size: 1.35rem;
+  color: #64748b;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  margin-bottom: 0;
+}
+.view-all-btn {
+  background: #f8fafc;
+  color: #1a232b;
+  border-radius: 10px;
+  padding: 12px 32px;
+  font-weight: 500;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  border: 1px solid #e5e7eb;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.view-all-btn span {
+  font-size: 1.2rem;
+  margin-left: 4px;
+}
+/* Home Hero Section CSS */
+.home-hero {
+  position: relative;
+  min-height: 85vh;
+  width: 99vw;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(22,156,83,0.85), rgba(22,156,83,0.85)), url('../../assets/hero-field.jpg') center center/cover no-repeat;
+  border-radius: 0;
+  box-sizing: border-box;
+  padding: 0 2rem;
+  margin-top: 5px;
+  overflow: hidden;
+  margin-bottom: -40px;
+}
+
+.home-hero h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+}
+
+.home-hero h1 .highlight {
+  color: #fa9c1b;
+  font-weight: 800;
+}
+
+.home-hero .hero-desc {
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  max-width: 800px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.hero-btn {
+  min-width: 260px;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+
+
+.hero-btn span,
+.hero-btn b,
+.hero-btn strong {
+  text-decoration: none;
+}
+.hero-highlight {
+  color: #fa9c1b; /* Set to orange */
+}
+
+
+.hero-btn.browse-btn {
+  background: #16a34a;
+  color: #fff;
+}
+
+
+.hero-btn.browse-btn:hover {
+  background: #107c41;
+}
+.hero-btn.book-btn {
+  background: #fa9c1b;
+  color: #fff;
+  width: 250px;
+  height: 70px;
+}
+
+
+.hero-btn.book-btn:hover {
+  background: #d97a00;
+}
+
+
+.hero-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.hero-btn .icon-location {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url('./assets/location.svg') center/contain no-repeat;
+  display: inline-block;
+}
+
+.hero-btn .icon-calendar {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url('./assets/calendar.svg') center/contain no-repeat;
+  display: inline-block;
+}
+
+@media (max-width: 900px) {
+  .home-hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero-desc {
+    font-size: 1.1rem;
+  }
+  .hero-actions {
+    gap: 12px;
+  }
+}
+.home2 {
+  background: #f4f0f0;
+  height: 490px;
+}
+.heading-container {
+  text-align: center;
+  margin-bottom: 18px;
+  margin-top: 48px;
+}
+.heading-container h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #100000;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+}
+.the_sentence {
+  display: block;
+  color: #6c7a89;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18px;
+  font-weight: 400;
+}
+/* Home2.css */
+
+.goalzone-section {
+  padding: 80px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.goalzone-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.goalzone-section h1 span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #6c757d;
+  margin-top: 16px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 60px auto 0 auto;
+  padding: 0;
+  max-width: 1400px;
+}
+
+.feature-card {
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+  padding: 50px 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 230px;
+  height: 245px;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+  width: 80px;
+  height: 120px;
+  background: #159a3a;
+  border-radius: 50%;
+  width: 76px;
+  height: 76px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  background: #34ce57;
+ 
+}
+
+.feature-icon svg {
+  width: 32px;
+  height: 32px;
+  color: white;
+  stroke-width: 2;
+}
+
+.feature-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.feature-desc {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .feature-cards {
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .goalzone-section {
+    padding: 60px 20px;
+  }
+  
+  .goalzone-section h1 {
+    font-size: 2rem;
+  }
+  
+  .goalzone-section h1 span {
+    font-size: 1.1rem;
+  }
+  
+  .feature-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 50px;
+    padding: 0;
+  }
+  
+  .feature-card {
+    padding: 40px 25px;
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin-top: 50px;
+    padding: 0;
+  }
+}
+
+.browse-fields-section{
+  /* Center the content and remove the unintended dark background */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  background-color: transparent;
+}
+
+.featured-fields-cards{
+  display: flex;
+  
+}

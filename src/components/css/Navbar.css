@@ -1,0 +1,227 @@
+/* Sticky Navbar */
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+/* Navbar main container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 16px 32px 0 32px;
+  height: 60px;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 0 0 2px #ededed;
+}
+
+/* Logo section */
+.navbar_left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  gap: 2px;
+}
+
+.logo_left {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  font-family: 'Segoe UI', 'Poppins', Arial, sans-serif;
+  margin-left: 8px;
+}
+
+/* Center navigation links */
+.navbar_middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar_middle li a {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 8px 24px;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar_middle li a.active {
+  background: #EAF7F0;
+  color: #169C53;
+  font-weight: 600;
+}
+
+.navbar_middle li a:hover:not(.active) {
+  background: #f5f5f5;
+}
+
+/* Right section */
+.navbar_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  gap: 6px;
+  padding: 0 8px;
+}
+
+/* Logged-in user display */
+.user-email {
+  font-size: 1rem;
+  color: #222;
+  font-weight: 600;
+  margin-right: 12px;
+  padding: 4px 8px;
+  /* show full email without ellipsis */
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+/* on small screens, allow truncation to keep navbar compact */
+@media (max-width: 600px) {
+  .user-email {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.logout-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid #e6e6e6;
+  color: #222;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  height: 36px;
+  width: auto;
+}
+
+.logout-btn:hover {
+  background: #f5f5f5;
+  border-color: #ddd;
+}
+
+.login-btn a {
+  text-decoration: none !important;
+  color: #222;
+  font-weight: 500;
+}
+
+.book-btn {
+  display: flex;
+  align-items: center;
+  background: #169C53 !important;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0 14px;
+  height: 36px;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+  width: auto;
+}
+
+/* make the navbar-scoped Book Now button match the logout button style */
+.navbar_right > .book-btn {
+  background: #169C53 !important;
+  color: #ffffff !important;
+  border: none;
+  padding: 6px 10px;
+  height: 36px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* ensure the link text inside the navbar book button is visible (not white) */
+.navbar_right > .book-btn a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.book-btn a {
+  color: #1ec542 !important;
+  text-decoration: none !important;
+  font-weight: 600;
+}
+
+.book-btn:hover {
+  background: #107c41 !important;
+}
+
+/* Home hero orange button */
+.book-btn.hero-btn {
+  background: #F7931E !important;
+}
+.book-btn.hero-btn:hover {
+  background: #d97a00 !important;
+}
+
+/* keep hero buttons larger than navbar buttons */
+.book-btn.hero-btn {
+  padding: 0 24px;
+  height: 60px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+}
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 16px;
+    border-radius: 0;
+  }
+  .navbar_middle {
+    margin: 12px 0;
+    gap: 20px;
+  }
+  .navbar_right {
+    gap: 12px;
+  }
+}
