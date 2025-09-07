@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+:root{
+  --green: #169C53;
+  --muted: #f5f5f5;
+  --card-bg: #ffffff;
+  --text: #222;
+}
+
+/* Center the simple markup used in logsign.jsx
+   The component renders inputs/select/buttons directly inside
+   .logsign-container, so target those elements explicitly. */
+.logsign-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 70px);
+  padding: 24px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+  background: linear-gradient(180deg, rgba(22,156,83,0.03) 0%, rgba(255,255,255,0) 60%);
+}
+
+/* card-like container appearance (applies even without explicit .logsign-card) */
+.logsign-container { max-width: 480px; margin: 0 auto; }
+.logsign-container > * { box-sizing: border-box; }
+
+/* Style plain inputs/select so they look like site form controls */
+.logsign-container input,
+.logsign-container select {
+  width: 100%;
+  max-width: 420px;
+  padding: 10px 12px;
+  margin: 6px 0;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+/* Buttons inside the actions row */
+.logsign-actions{
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.logsign-actions button,
+.logsign-actions a button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  cursor: pointer;
+  min-width: 96px;
+}
+
+/* primary (Login) */
+.logsign-actions button:first-of-type,
+.logsign-actions a button:first-of-type {
+  background: var(--green);
+  color: #fff;
+  border-color: var(--green);
+}
+
+/* secondary (Sign Up) */
+.logsign-actions button:last-of-type {
+  background: transparent;
+  color: var(--text);
+  border-color: #e6e6e6;
+}
+
+/* small screens: full width controls */
+@media (max-width: 560px){
+  .logsign-container { padding: 16px; }
+  .logsign-actions { flex-direction: column; width: 100%; }
+  .logsign-actions button, .logsign-actions a button { width: 100%; min-width: auto; }
+}
