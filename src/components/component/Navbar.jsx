@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../css/Navbar.css'
-
+import Buttonbt from './Buttonbt'
+import '../../components/css/Navbar.css'
 import logo from '../../assets/logo.png'
 function Navbar({ user, onLogout }) {
   return (
@@ -27,9 +27,8 @@ function Navbar({ user, onLogout }) {
           <Link to="/login">Login</Link>
         </span>
       )}
-      <Link to="/browse">
-          <button className="btn btn-success">Book Now</button>
-      </Link>
+
+    <Buttonbt /> 
 
 
     </div>
